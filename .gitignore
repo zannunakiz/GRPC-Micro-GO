@@ -1,0 +1,39 @@
+# Binaries and executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries and coverage reports
+*.test
+*.out
+*.prof
+coverage.txt
+
+# Output / build directories
+/bin/
+/dist/
+/pkg/
+
+# Compiled object files
+*.a
+*.o
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Optional: Vendor folder (uncomment if you rely strictly on go mod download/cache)
+# /vendor/
