@@ -1,27 +1,41 @@
 # GRPC Microservices
 
-## Prerequisites
+A Microservices architecture built with **Go** and **gRPC**.
 
-* **Go** `1.22` or higher
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/zannunakiz/GRPC-Micro-GO.git](https://github.com/zannunakiz/GRPC-Micro-GO.git)
-   cd GRPC-Micro-GO
+```text
+[ Client / Postman ]
+         │
+         │  HTTP / REST (JSON)
+         ▼
+ ┌─────────────────┐
+ │  Orders Service │  (HTTP Gateway & gRPC Client)
+ └────────┬────────┘
+          │
+          │  gRPC / Protobuf
+          ▼
+ ┌─────────────────┐
+ │ Kitchen Service │  (gRPC Server)
+ └─────────────────┘
 
 ```
 
-2. Download dependencies:
+---
+
+## 🚀 Quick Start
+
+### 1. Run Orders Service
+
+The **Orders** service server is ready to run. Executing the service will start the HTTP/gRPC server instance.
+
+Open your terminal and run:
+
 ```bash
-go mod download
+make run-orders
 
 ```
 
+---
 
-3. Run the application:
-```bash
-go run .
+## 📮 API Testing
 
-```
+A pre-configured Postman collection is available in `postman-collection.json` in the root repository. Import this file directly into Postman to start testing API requests.
