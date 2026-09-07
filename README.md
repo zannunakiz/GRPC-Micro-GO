@@ -34,6 +34,17 @@ make run-orders
 
 ```
 
+### 2. Run Kitchen Service
+
+The **Kitchen** service server is ready to run. Executing the service will start the gRPC server instance.
+
+Open your terminal and run:
+
+```bash
+make run-kitchen
+
+```
+
 ---
 
 ## 📮 API Testing
