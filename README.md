@@ -1,27 +1,6 @@
 # GRPC Microservices
 
-## Prerequisites
+> **Note:** After running `initial GUS`, create the `gen.bat` file and run it directly from the CLI:
 
-* **Go** `1.22` or higher
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/zannunakiz/GRPC-Micro-GO.git](https://github.com/zannunakiz/GRPC-Micro-GO.git)
-   cd GRPC-Micro-GO
-
-```
-
-2. Download dependencies:
-```bash
-go mod download
-
-```
-
-
-3. Run the application:
-```bash
-go run .
-
-```
+```cmd
+gen.bat
